@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url(./images/photo-1585202900225-6d3ac20a6962.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 41vw;
+    height: 100vh;
+}
+
+.right-side {
+    background-color: rgb(241, 237, 237);
+    flex: 1;
+}
