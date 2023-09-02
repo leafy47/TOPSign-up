@@ -1,6 +1,13 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 .container {
@@ -24,15 +31,23 @@
 .black-box {
     margin-top: 20vh;
     height: 20vh;
-    background-color: black;
-    opacity: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .black-box img {
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    height: 80%;
+    opacity: 100%;
+}
+
+.left-side .black-box span {
+    margin: 0;
+    color: white;
+    font-size: 120px;
+    font-family: Norse;
+    opacity: 180%;
 }
 
 .flexdiv {
@@ -60,31 +75,80 @@ a:visited {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    margin: 0 80px 0 80px;
+    margin: 0 60px 0 60px;
 }
 
 .formdiv {
     height: 70vh;
-    background-color: rgb(232, 230, 233);
+    background-color: rgb(255, 255, 255);
 }
 
 input {
-  width: 150px;
-  padding: 0;
+  width: 250px;
+  padding-left: 8px;
   margin: 0;
   box-sizing: border-box;
+  height: 35px;
+  border: 1px solid #E5E7EB;
+  border-radius: 7px;
+  font-size: 17px;
 }
 
 form {
     display: flex;
-    height: 30vh;
+    height: 35vh;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 40px;
+    justify-content: space-evenly;
+    margin-left: 60px;
 }
 
 form > div > div {
     display: inline-flex;
     flex-direction: column;
+    font-size: 14px;
+    margin-right: 80px;
 }
 
+form > p {
+    font-size: 40px;
+}
+
+input:focus {
+    box-shadow: 10px 5px 5px rgb(206, 206, 206);
+    outline: none;
+}
+
+.blueborder:focus {
+    border: 2px solid rgb(86, 98, 226);
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.formdiv {
+    box-shadow: 15px 7px 5px rgb(206, 206, 206);
+    height: 35vh;
+}
+
+button {
+    height: 60px;
+    width: 230px;
+    background-color: #596D48;
+    border-radius: 12px;
+    color: white;
+    margin-left: 60px;
+    margin-top: 70px;
+    font-size: 22px;
+}
+
+.footerdiv p {
+    font-size: 21px;
+    margin-left: 60px;
+    margin-top: 70px;
+    color: black;
+}
+
+.footerdiv a {
+    color:#596D48;
+}

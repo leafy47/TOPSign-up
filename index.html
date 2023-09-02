@@ -10,7 +10,7 @@
     <div class="container">
         <div class="left-side">
             <div class="black-box">
-                <img src="./images/odin-lined.png" alt="Odin logo">
+                <img src="./images/odin-lined.png" alt="Odin logo"><span>Odin</span>
             </div>
             <div class="flexdiv"><span>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></span></div>
         </div>
@@ -22,39 +22,43 @@
             </div>
             <div class="formdiv">
                 
-                <form action="">
+                <form action="" id="myform">
                     <p>Let's do this!</p>
                     <div>
                         <div>
                             <label for="firstname">FIRST NAME</label>
-                            <input type="text" id="firstname" name="firstname">
+                            <input type="text" id="firstname" name="firstname" class="blueborder">
                         </div>
                         <div>
                             <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname" name="lastname">
+                            <input type="text" id="lastname" name="lastname" class="blueborder">
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" class="blueborder">
                         </div>
                         <div>
                             <label for="phonenum">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" class="blueborder">
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" class="error">
                         </div>
                         <div>
                             <label for="confirmpass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmpass">
+                            <input type="password" id="confirmpass" class="error">
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="footerdiv">
+                <button type="submit" form="myform">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
