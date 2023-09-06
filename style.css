@@ -76,6 +76,7 @@ a:visited {
     align-items: center;
     height: 30vh;
     margin: 0 60px 0 60px;
+    font-weight:600;
 }
 
 .formdiv {
@@ -126,6 +127,7 @@ input:focus {
     border: 2px solid red;
 }
 
+
 .formdiv {
     box-shadow: 15px 7px 5px rgb(206, 206, 206);
     height: 35vh;
@@ -151,4 +153,15 @@ button {
 
 .footerdiv a {
     color:#596D48;
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+.warning::after {
+    margin-left: 15px;
+    content: "          Passwords do not match!";
+    color: red;
+    font-size: 12px;
 }

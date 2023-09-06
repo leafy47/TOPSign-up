@@ -27,31 +27,31 @@
                     <div>
                         <div>
                             <label for="firstname">FIRST NAME</label>
-                            <input type="text" id="firstname" name="firstname" class="blueborder">
+                            <input type="text" id="firstname" name="firstname" class="blueborder" required>
                         </div>
                         <div>
                             <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname" name="lastname" class="blueborder">
+                            <input type="text" id="lastname" name="lastname" class="blueborder" required>
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" class="blueborder">
+                            <input type="email" name="email" id="email" class="blueborder" required>
                         </div>
                         <div>
                             <label for="phonenum">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel" class="blueborder">
+                            <input type="tel" name="tel" id="tel" class="blueborder" required>
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" class="error">
+                            <input type="password" name="password" id="password" class="error" required>
                         </div>
                         <div>
-                            <label for="confirmpass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmpass" class="error">
+                            <label for="confirmpass" class="nowarning">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmpass" class="error" required>
                         </div>
                     </div>
                 </form>
@@ -62,5 +62,6 @@
             </div>
         </div>
     </div>
+    <script src="./javascript.js"></script>
 </body>
 </html>
